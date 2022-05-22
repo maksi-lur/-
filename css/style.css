@@ -8195,13 +8195,13 @@ body {
 
   .main__team-block1-title {
     margin-bottom: 4rem;
-    max-width: 75rem;
-    font-size: 2rem;
+    font-size: 3rem;
   }
 
   .main__team-block1-subtitle {
     margin-bottom: 4rem;
-    max-width: 60rem;
+    max-width: 70%;
+    font-size: 1.7rem;
   }
 
   .main__team-block1-text {

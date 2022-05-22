@@ -6449,7 +6449,6 @@ body {
 
 @media screen and (min-width: 701px) and (max-width: 992px) {
   .title {
-    font-size: 3.5rem;
     line-height: 100%;
   }
 
@@ -6462,7 +6461,6 @@ body {
   }
 
   .subtitle {
-    font-size: 1.4rem;
     line-height: 140%;
   }
 
@@ -6472,11 +6470,6 @@ body {
 
   .subtitle a:hover:before {
     background: #2D4959;
-  }
-
-  .text-small {
-    font-size: 1.1rem;
-    line-height: 110%;
   }
 
   .header__body {

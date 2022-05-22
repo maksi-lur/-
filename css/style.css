@@ -139,8 +139,6 @@ body {
 .title {
   font-family: "CoFo Robert", serif;
   color: #8f8f8f;
-  font-size: 3.125rem;
-  line-height: 140%;
 }
 
 .title a {
@@ -164,8 +162,6 @@ body {
 .subtitle {
   text-transform: uppercase;
   color: #767070;
-  font-size: 0.875rem;
-  line-height: 160%;
   letter-spacing: 5%;
 }
 
@@ -370,12 +366,22 @@ body {
 }
 
 @media screen and (min-width: 1301px) {
+  .title {
+    font-size: 3.125rem;
+    line-height: 140%;
+  }
+
   .title a:hover {
     color: #2D4959;
   }
 
   .title a:hover:before {
     background: #2D4959;
+  }
+
+  .subtitle {
+    font-size: 0.875rem;
+    line-height: 160%;
   }
 
   .subtitle a:hover {
@@ -2456,6 +2462,11 @@ body {
 
   .title a:active:before {
     background: #2D4959;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+    line-height: 140%;
   }
 
   .subtitle a:active {
@@ -8185,6 +8196,7 @@ body {
   .main__team-block1-title {
     margin-bottom: 4rem;
     max-width: 75rem;
+    font-size: 2rem;
   }
 
   .main__team-block1-subtitle {

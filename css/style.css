@@ -3503,7 +3503,7 @@ body {
   }
 
   .main__headcatalog-content-item-image img.image-balasini {
-    max-height: 17rem;
+    max-height: rem;
   }
 
   .main__headcatalog-content-item-image img {
@@ -6447,7 +6447,7 @@ body {
 
 @media screen and (min-width: 701px) and (max-width: 992px) {
   .title {
-    font-size: 4.5rem;
+    font-size: 3.5rem;
     line-height: 100%;
   }
 
@@ -6460,7 +6460,7 @@ body {
   }
 
   .subtitle {
-    font-size: 1.7rem;
+    font-size: 1.4rem;
     line-height: 140%;
   }
 

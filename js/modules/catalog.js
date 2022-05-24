@@ -70,82 +70,84 @@ let subElementListImage = [
 //cписок элементов внутри подсписка для выбора
 let imageContentListImage = [
    [//балюстрады
-      ['ABL66-2.png', 'ABL66-2.png', 'ABL66-2.png', 'ABL66-2.png', 'ABL66-2.png', 'ABL66-2.png', 'ABL66-2.png', 'ABL66-2.png', 'ABL66-2.png'],//балясины
-      ['no-img.png', 'no-img.png', 'no-img.png', 'no-img.png', 'no-img.png', 'no-img.png',],//крышки и тумбы
-      ['no-img.png', 'no-img.png', 'no-img.png', 'no-img.png', 'no-img.png', 'no-img.png'],//навершия
-      ['no-img.png', 'no-img.png', 'no-img.png', 'no-img.png', 'no-img.png'],//основания балюстрады
-      ['no-img.png', 'no-img.png', 'no-img.png', 'no-img.png'],//тело тумбы
-      ['no-img.png', 'no-img.png', 'no-img.png', 'no-img.png', 'no-img.png', 'no-img.png']//поручень балюстрады
+      [['ABL66-2.png', 'ABL66-2.webp'], ['ABL66-2.png', 'ABL66-2.webp'], ['ABL66-2.png', 'ABL66-2.webp'], ['ABL66-2.png', 'ABL66-2.webp'], ['ABL66-2.png', 'ABL66-2.webp'], ['ABL66-2.png', 'ABL66-2.webp'], ['ABL66-2.png', 'ABL66-2.webp'], ['ABL66-2.png', 'ABL66-2.webp'], ['ABL66-2.png', 'ABL66-2.webp']],//балясины
+      [['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'],],
+      [['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'],],
+      [['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'],],
+      [['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'],],
+      [['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'],],
+
    ],
    //декоративные элементы
    [
-      ['no-img.png', 'no-img.png', 'no-img.png', 'no-img.png'],
-      ['no-img.png', 'no-img.png', 'no-img.png', 'no-img.png', 'no-img.png'],
-      ['no-img.png', 'no-img.png', 'no-img.png', 'no-img.png', 'no-img.png', 'no-img.png'],
-      ['no-img.png', 'no-img.png', 'no-img.png'],
-      ['no-img.png', 'no-img.png', 'no-img.png', 'no-img.png', 'no-img.png', 'no-img.png'],
-      ['no-img.png', 'no-img.png', 'no-img.png', 'no-img.png'],
-      ['no-img.png', 'no-img.png', 'no-img.png'],
+      [['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'],],
+      [['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'],],
+      [['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'],],
+      [['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'],],
+      [['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'],],
+      [['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'],],
+      [['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'],],
    ],
    //замковые камни
    [
-      ['no-img.png', 'no-img.png', 'no-img.png', 'no-img.png'],
-      ['no-img.png', 'no-img.png', 'no-img.png', 'no-img.png', 'no-img.png'],
-      ['no-img.png', 'no-img.png', 'no-img.png', 'no-img.png', 'no-img.png'],
-      ['no-img.png', 'no-img.png']
+      [['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'],],
+      [['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'],],
+      [['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'],],
+      [['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'],],
    ],
    //малые архитектурные формы
    [
-      ['no-img.png', 'no-img.png', 'no-img.png', 'no-img.png'],
-      ['no-img.png', 'no-img.png', 'no-img.png', 'no-img.png', 'no-img.png'],
-      ['no-img.png', 'no-img.png', 'no-img.png', 'no-img.png', 'no-img.png'],
-      ['no-img.png', 'no-img.png', 'no-img.png', 'no-img.png'],
-      ['no-img.png', 'no-img.png', 'no-img.png', 'no-img.png', 'no-img.png', 'no-img.png'],
-      ['no-img.png', 'no-img.png', 'no-img.png', 'no-img.png', 'no-img.png', 'no-img.png'],
+      [['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'],],
+      [['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'],],
+      [['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'],],
+      [['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'],],
+      [['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'],],
+      [['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'],],
    ],
    //карнизы
    [
-      ['no-img.png', 'no-img.png', 'no-img.png', 'no-img.png'],
-      ['no-img.png', 'no-img.png', 'no-img.png', 'no-img.png', 'no-img.png'],
-      ['no-img.png', 'no-img.png', 'no-img.png', 'no-img.png', 'no-img.png'],
+      [['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'],],
+      [['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'],],
+      [['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'],],
    ],
    //наличники
    [
-      ['no-img.png', 'no-img.png', 'no-img.png', 'no-img.png'],
-      ['no-img.png', 'no-img.png', 'no-img.png', 'no-img.png', 'no-img.png'],
-      ['no-img.png', 'no-img.png', 'no-img.png', 'no-img.png', 'no-img.png'],
-      ['no-img.png', 'no-img.png', 'no-img.png', 'no-img.png'],
-      ['no-img.png', 'no-img.png', 'no-img.png', 'no-img.png'],
+      [['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'],],
+      [['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'],],
+      [['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'],],
+      [['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'],],
+      [['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'],],
    ],
    //подоконники
    [
-      ['no-img.png', 'no-img.png', 'no-img.png', 'no-img.png'],
-      ['no-img.png', 'no-img.png', 'no-img.png', 'no-img.png', 'no-img.png'],
-      ['no-img.png', 'no-img.png', 'no-img.png', 'no-img.png', 'no-img.png'],
-      ['no-img.png', 'no-img.png', 'no-img.png', 'no-img.png', 'no-img.png'],
-      ['no-img.png', 'no-img.png', 'no-img.png'],
+      [['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'],],
+      [['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'],],
+      [['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'],],
+      [['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'],],
+      [['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'],],
    ],
    //русты
    [
 
-      ['no-img.png', 'no-img.png', 'no-img.png', 'no-img.png'],
-      ['no-img.png', 'no-img.png', 'no-img.png', 'no-img.png', 'no-img.png'],
-      ['no-img.png', 'no-img.png', 'no-img.png', 'no-img.png'],
-      ['no-img.png', 'no-img.png', 'no-img.png', 'no-img.png'],
+      [['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'],],
+      [['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'],],
+      [['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'],],
+      [['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'],],
 
    ],
    //колонны
    [
-      ['no-img.png', 'no-img.png', 'no-img.png', 'no-img.png'],
-      ['no-img.png', 'no-img.png', 'no-img.png', 'no-img.png', 'no-img.png'],
-      ['', '', '', '', ''],
+      [['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'],],
+      [['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'],],
+      [['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'],],
+
    ],
    //пилястры
    [
-      ['no-img.png', 'no-img.png', 'no-img.png', 'no-img.png',],
-      ['no-img.png', 'no-img.png', 'no-img.png', 'no-img.png', 'no-img.png'],
-      ['no-img.png', 'no-img.png', 'no-img.png', 'no-img.png', 'no-img.png'],
-      ['no-img.png', 'no-img.png',]
+      [['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'],],
+      [['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'],],
+      [['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'],],
+      [['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'], ['no-img.png', 'no-img.webp'],],
    ]
 
 ];
@@ -161,8 +163,6 @@ catalogObjItem.subElementList = document.querySelectorAll('.element-item2-active
 catalogObjItem.content_listList = document.querySelectorAll('.content-block-active .content-list');
 catalogObjItem.subElementList[subElementIndex].classList.add('subelement-item-active');
 catalogObjItem.content_listList[subElementIndex].classList.add('content-list-active');
-
-
 
 
 
@@ -183,61 +183,122 @@ catalogObjItem.activeNavItem = document.querySelector('.active-nav-catalog-item'
 
 //функция для инициализации выбора цвета
 function initColor(param) {
-   let colorListItem = document.querySelectorAll('.color-list-active .color-item');
-   let activeImage = document.querySelector('.content-item-active .content-image');
-   imageDelete();
-   initItemColor()
-   colorListItem[0].addEventListener('click', function () {
-      activeImage.setAttribute('src', 'img/catalog/white-isvestniak/' + element + '/' + subElement + '/' + imageItem)
-   })
-   colorListItem[1].addEventListener('click', function () {
-      activeImage.setAttribute('src', 'img/catalog/cream-isvestniak/' + element + '/' + subElement + '/' + imageItem)
-   })
-   colorListItem[2].addEventListener('click', function () {
-      activeImage.setAttribute('src', 'img/catalog/yellow-isvestniak/' + element + '/' + subElement + '/' + imageItem)
-   })
-   colorListItem[3].addEventListener('click', function () {
-      activeImage.setAttribute('src', 'img/catalog/sandstone-cream/' + element + '/' + subElement + '/' + imageItem)
-   })
-   colorListItem[4].addEventListener('click', function () {
-      activeImage.setAttribute('src', 'img/catalog/beige-isvestniak/' + element + '/' + subElement + '/' + imageItem)
-   })
-   colorListItem[5].addEventListener('click', function () {
-      activeImage.setAttribute('src', 'img/catalog/gray-isvestniak/' + element + '/' + subElement + '/' + imageItem)
-   })
-   colorListItem[6].addEventListener('click', function () {
-      activeImage.setAttribute('src', 'img/catalog/black-isvestniak/' + element + '/' + subElement + '/' + imageItem)
-   })
-   colorListItem[7].addEventListener('click', function () {
-      activeImage.setAttribute('src', 'img/catalog/brown-marble/' + element + '/' + subElement + '/' + imageItem)
-   })
-   colorListItem[8].addEventListener('click', function () {
-      activeImage.setAttribute('src', 'img/catalog/travertine-brown/' + element + '/' + subElement + '/' + imageItem)
-   })
-   colorListItem[9].addEventListener('click', function () {
-      activeImage.setAttribute('src', 'img/catalog/travertine-cream/' + element + '/' + subElement + '/' + imageItem)
-   })
+   if (document.documentElement.classList.contains('no-webp')) {
+      let colorListItem = document.querySelectorAll('.color-list-active .color-item');
+      let activeImage = document.querySelector('.content-item-active .content-image');
+      imageDelete();
+      initItemColor();
+      colorListItem[0].addEventListener('click', function () {
+         activeImage.setAttribute('src', 'img/catalog/white-isvestniak/' + element + '/' + subElement + '/' + imageItem)
+      })
+      colorListItem[1].addEventListener('click', function () {
+         activeImage.setAttribute('src', 'img/catalog/cream-isvestniak/' + element + '/' + subElement + '/' + imageItem)
+      })
+      colorListItem[2].addEventListener('click', function () {
+         activeImage.setAttribute('src', 'img/catalog/yellow-isvestniak/' + element + '/' + subElement + '/' + imageItem)
+      })
+      colorListItem[3].addEventListener('click', function () {
+         activeImage.setAttribute('src', 'img/catalog/sandstone-cream/' + element + '/' + subElement + '/' + imageItem)
+      })
+      colorListItem[4].addEventListener('click', function () {
+         activeImage.setAttribute('src', 'img/catalog/beige-isvestniak/' + element + '/' + subElement + '/' + imageItem)
+      })
+      colorListItem[5].addEventListener('click', function () {
+         activeImage.setAttribute('src', 'img/catalog/gray-isvestniak/' + element + '/' + subElement + '/' + imageItem)
+      })
+      colorListItem[6].addEventListener('click', function () {
+         activeImage.setAttribute('src', 'img/catalog/black-isvestniak/' + element + '/' + subElement + '/' + imageItem)
+      })
+      colorListItem[7].addEventListener('click', function () {
+         activeImage.setAttribute('src', 'img/catalog/brown-marble/' + element + '/' + subElement + '/' + imageItem)
+      })
+      colorListItem[8].addEventListener('click', function () {
+         activeImage.setAttribute('src', 'img/catalog/travertine-brown/' + element + '/' + subElement + '/' + imageItem)
+      })
+      colorListItem[9].addEventListener('click', function () {
+         activeImage.setAttribute('src', 'img/catalog/travertine-cream/' + element + '/' + subElement + '/' + imageItem)
+      })
 
+   }
+   if (document.documentElement.classList.contains('webp')) {
+      let colorListItem = document.querySelectorAll('.color-list-active .color-item');
+      let activeImage = document.querySelector('.content-item-active source');
+      imageDelete();
+      initItemColor();
+      colorListItem[0].addEventListener('click', function () {
+         activeImage.setAttribute('srcset', 'img/catalog/white-isvestniak/' + element + '/' + subElement + '/' + imageItem)
+      })
+      colorListItem[1].addEventListener('click', function () {
+         activeImage.setAttribute('srcset', 'img/catalog/cream-isvestniak/' + element + '/' + subElement + '/' + imageItem)
+      })
+      colorListItem[2].addEventListener('click', function () {
+         activeImage.setAttribute('srcset', 'img/catalog/yellow-isvestniak/' + element + '/' + subElement + '/' + imageItem)
+      })
+      colorListItem[3].addEventListener('click', function () {
+         activeImage.setAttribute('srcset', 'img/catalog/sandstone-cream/' + element + '/' + subElement + '/' + imageItem)
+      })
+      colorListItem[4].addEventListener('click', function () {
+         activeImage.setAttribute('srcset', 'img/catalog/beige-isvestniak/' + element + '/' + subElement + '/' + imageItem)
+      })
+      colorListItem[5].addEventListener('click', function () {
+         activeImage.setAttribute('srcset', 'img/catalog/gray-isvestniak/' + element + '/' + subElement + '/' + imageItem)
+      })
+      colorListItem[6].addEventListener('click', function () {
+         activeImage.setAttribute('srcset', 'img/catalog/black-isvestniak/' + element + '/' + subElement + '/' + imageItem)
+      })
+      colorListItem[7].addEventListener('click', function () {
+         activeImage.setAttribute('srcset', 'img/catalog/brown-marble/' + element + '/' + subElement + '/' + imageItem)
+      })
+      colorListItem[8].addEventListener('click', function () {
+         activeImage.setAttribute('srcset', 'img/catalog/travertine-brown/' + element + '/' + subElement + '/' + imageItem)
+      })
+      colorListItem[9].addEventListener('click', function () {
+         activeImage.setAttribute('srcset', 'img/catalog/travertine-cream/' + element + '/' + subElement + '/' + imageItem)
+      })
+
+   }
 }
 //функция для выбора цвета элемента
 function initItemColor() {
    let contentBlockActive = document.querySelectorAll('.content-block')
-   for (let j = 0; j < contentBlockActive.length; j++) {
-      if (contentBlockActive[j].classList.contains('content-block-active')) {
-         let contentListActive = document.querySelectorAll('.content-block-active .content-list')
-         for (let y = 0; y < contentListActive.length; y++) {
-            if (contentListActive[y].classList.contains('content-list-active')) {
-               let contentItemActive = document.querySelectorAll('.content-list-active .catalog-content-item')
-               for (let w = 0; w < contentItemActive.length; w++) {
-                  if (contentItemActive[w].classList.contains('content-item-active')) {
-                     contentItemActive[w].classList.add('content-item-color')
-                     element = archiElemListImage[j];
-                     subElement = subElementListImage[j][y];
-                     imageItem = imageContentListImage[j][y][w];
-                     // console.log(j, y, w)
-                     // console.log(element, subElement, imageItem)
-                     return
-                  };
+   if (document.documentElement.classList.contains('webp')) {
+      for (let j = 0; j < contentBlockActive.length; j++) {
+         if (contentBlockActive[j].classList.contains('content-block-active')) {
+            let contentListActive = document.querySelectorAll('.content-block-active .content-list')
+            for (let y = 0; y < contentListActive.length; y++) {
+               if (contentListActive[y].classList.contains('content-list-active')) {
+                  let contentItemActive = document.querySelectorAll('.content-list-active .catalog-content-item')
+                  for (let w = 0; w < contentItemActive.length; w++) {
+                     if (contentItemActive[w].classList.contains('content-item-active')) {
+                        contentItemActive[w].classList.add('content-item-color')
+                        element = archiElemListImage[j];
+                        subElement = subElementListImage[j][y];
+                        imageItem = imageContentListImage[j][y][w][1];
+
+                        return
+                     };
+                  }
+               }
+            }
+         }
+      }
+   }
+   if (document.documentElement.classList.contains('no-webp')) {
+      for (let j = 0; j < contentBlockActive.length; j++) {
+         if (contentBlockActive[j].classList.contains('content-block-active')) {
+            let contentListActive = document.querySelectorAll('.content-block-active .content-list')
+            for (let y = 0; y < contentListActive.length; y++) {
+               if (contentListActive[y].classList.contains('content-list-active')) {
+                  let contentItemActive = document.querySelectorAll('.content-list-active .catalog-content-item')
+                  for (let w = 0; w < contentItemActive.length; w++) {
+                     if (contentItemActive[w].classList.contains('content-item-active')) {
+                        contentItemActive[w].classList.add('content-item-color')
+                        element = archiElemListImage[j];
+                        subElement = subElementListImage[j][y];
+                        imageItem = imageContentListImage[j][y][w][0];
+                        return
+                     };
+                  }
                }
             }
          }
@@ -246,13 +307,26 @@ function initItemColor() {
 }
 //функция для удаления выбранного цвета на предыдущем элементе
 function imageDelete() {
-   let deleteContentImageColor = document.querySelector('.content-item-color .content-image');
-   if (deleteContentImageColor !== null) {
-      deleteContentImageColor.setAttribute('src', 'img/catalog/white-isvestniak/' + element + '/' + subElement + '/' + imageItem)
-      let deleteContentItemColor = document.querySelector('.content-item-color')
-      deleteContentItemColor.classList.remove('content-item-color')
+   if (document.documentElement.classList.contains('no-webp')) {
+      let deleteContentImageColor = document.querySelector('.content-item-color .content-image');
+      if (deleteContentImageColor !== null) {
+         deleteContentImageColor.setAttribute('src', 'img/catalog/white-isvestniak/' + element + '/' + subElement + '/' + imageItem)
+         let deleteContentItemColor = document.querySelector('.content-item-color')
+         deleteContentItemColor.classList.remove('content-item-color')
+      }
    }
+   if (document.documentElement.classList.contains('webp')) {
+      let deleteContentImageColor = document.querySelector('.content-item-color source');
+      if (deleteContentImageColor !== null) {
+         deleteContentImageColor.setAttribute('srcset', 'img/catalog/white-isvestniak/' + element + '/' + subElement + '/' + imageItem)
+         let deleteContentItemColor = document.querySelector('.content-item-color')
+         deleteContentItemColor.classList.remove('content-item-color')
+      }
+   }
+
 }
+
+
 //функция для указания события по при выборе элемента главного списка
 export function clickHeadItem() {
    for (let i = 0; i < catalogObjItem.archiElementsList.length; i++) {

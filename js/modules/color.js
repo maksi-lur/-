@@ -26,16 +26,16 @@ export let catalogColorObj = {
       'pilastrii',
    ],
    indexImageList: [
-      'balustradi.png',
-      'dekorativnie_elementi.png',
-      'zamkovie_kamni.png',
-      'malie_arhitekturnie_formi.png',
-      'karnizi.png',
-      'nalichniki.png',
-      'podokonnki.png',
-      'rusti.png',
-      'kolonni.png',
-      'pilastrii.png',
+      ['balustradi.png', 'balustradi.webp'],
+      ['dekorativnie_elementi.png', 'dekorativnie_elementi.webp'],
+      ['zamkovie_kamni.png', 'zamkovie_kamni.webp'],
+      ['malie_arhitekturnie_formi.png', 'malie_arhitekturnie_formi.webp'],
+      ['karnizi.png', 'karnizi.webp'],
+      ['nalichniki.png', 'nalichniki.webp'],
+      ['podokonnki.png', 'podokonnki.webp'],
+      ['rusti.png', 'rusti.webp'],
+      ['kolonni.png', 'kolonni.webp'],
+      ['pilastrii.png', 'pilastrii.webp'],
 
    ]
 }
@@ -44,16 +44,30 @@ let indexColor;
 let indexElement;
 let indexImage;
 export function initColorCatalog() {
-   for (let u = 0; u < catalogColorObj.indexColorItem.length; u++) {
-      catalogColorObj.indexColorItem[u].addEventListener('click', function (param) {
-         indexColor = catalogColorObj.indexColorList[u];
-
-         for (let r = 0; r < catalogColorObj.indexCatalogItem.length; r++) {
-            indexElement = catalogColorObj.indexElementList[r];
-            indexImage = catalogColorObj.indexImageList[r];
-            catalogColorObj.indexCatalogItem[r].setAttribute('src', 'img/catalog/' + indexColor + '/' + indexElement + '/' + indexImage)
-         }
-      })
+   if (document.documentElement.classList.contains('no-webp')) {
+      for (let u = 0; u < catalogColorObj.indexColorItem.length; u++) {
+         catalogColorObj.indexColorItem[u].addEventListener('click', function (param) {
+            indexColor = catalogColorObj.indexColorList[u];
+            for (let r = 0; r < catalogColorObj.indexCatalogItem.length; r++) {
+               indexElement = catalogColorObj.indexElementList[r];
+               indexImage = catalogColorObj.indexImageList[r][0];
+               catalogColorObj.indexCatalogItem[r].setAttribute('src', 'img/catalog/' + indexColor + '/' + indexElement + '/' + indexImage)
+            }
+         })
+      }
+   }
+   if (document.documentElement.classList.contains('webp')) {
+      let indexCatalogItemWebp = document.querySelectorAll('.main__catalog-content-image source')
+      for (let u = 0; u < catalogColorObj.indexColorItem.length; u++) {
+         catalogColorObj.indexColorItem[u].addEventListener('click', function (param) {
+            indexColor = catalogColorObj.indexColorList[u];
+            for (let r = 0; r < indexCatalogItemWebp.length; r++) {
+               indexElement = catalogColorObj.indexElementList[r];
+               indexImage = catalogColorObj.indexImageList[r][1];
+               indexCatalogItemWebp[r].setAttribute('srcset', 'img/catalog/' + indexColor + '/' + indexElement + '/' + indexImage)
+            }
+         })
+      }
    }
 }
 

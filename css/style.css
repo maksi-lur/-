@@ -7130,6 +7130,7 @@ body {
     font-size: 12px;
     line-height: 140%;
     margin-bottom: 2rem;
+    text-align: center;
   }
 
   .footer__connection-text:nth-child(2) {
@@ -8400,7 +8401,7 @@ body {
   }
 
   .main__headcatalog-content-item-image img.image-balasini {
-    max-height: 24rem;
+    max-height: 27rem;
   }
 
   .main__headcatalog-content-item-image img.scheme {
@@ -8409,11 +8410,11 @@ body {
 
   .main__headcatalog-content-item-title {
     font-family: "CoFo Robert", serif;
-    font-size: 1.75rem;
+    font-size: 2rem;
     color: #767070;
     transition: color 0.3s;
     line-height: 160%;
-    margin-bottom: 5rem;
+    margin-bottom: 3rem;
     text-align: center;
   }
 

@@ -60,7 +60,9 @@ window.onload = function () {
 
    navFunction.scrollWindow();
    if (window.pageYOffset == 0 && window.innerWidth > 700) {
-      animFunction.animOnScroll();
+      setTimeout(() => {
+         animFunction.animOnScroll();
+      }, 200);
    }
    if (window.pageYOffset !== 0 || window.innerWidth <= 700) {
       for (let y = 0; y < animItem.length; y++) {

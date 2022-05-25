@@ -423,14 +423,14 @@ let proects = new Swiper('.main__proects-content', {
    },
 
    //Отключить предзагрузку картинок 
-   // preloadImages: false,
+   preloadImages: false,
    // //Lazy Loading(подгрузка картинок)
-   //lazy: {
-   //    //Подгружать на старте переключения слайда
-   //loadOnTransitionStart: true,
-   //    //Подгрузить предыдущую и следующую картинки 
-   //    loadPrevNext: false,
-   //},
+   lazy: {
+      //    //Подгружать на старте переключения слайда
+      //loadOnTransitionStart: true,
+      //    //Подгрузить предыдущую и следующую картинки 
+      loadPrevNext: false,
+   },
 
    // //Слежка за видимыми слайдами 
    // watchSlidesProgress: true,
@@ -869,14 +869,14 @@ let team = new Swiper('.main__team-slider-container', {
    },
 
    //Отключить предзагрузку картинок 
-   // preloadImages: false,
+   preloadImages: false,
    // //Lazy Loading(подгрузка картинок)
-   // lazy: {
-   //    //Подгружать на старте переключения слайда
-   //    loadOnTransitionStart: false,
-   //    //Подгрузить предыдущую и следующую картинки 
-   //    loadPrevNext: false,
-   // },
+   lazy: {
+      //    //Подгружать на старте переключения слайда
+      //    loadOnTransitionStart: false,
+      //    //Подгрузить предыдущую и следующую картинки 
+      loadPrevNext: true,
+   },
 
    // //Слежка за видимыми слайдами 
    // watchSlidesProgress: true,

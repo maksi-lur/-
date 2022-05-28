@@ -34,12 +34,13 @@ function initSmallScreen() {
 window.onload = function () {
    //предзагрузочный экран
    setTimeout(() => {
-      mapFunction.initYmaps();
-      mapFunction.clickCity()
+      // mapFunction.initYmaps();
+      // mapFunction.clickCity()
+      // mapFunction.clickShop();
       catalogFunction.clickHeadItem()
       catalogFunction.clickSubItem()
       catalogFunction.clickContentItem()
-      mapFunction.clickShop();
+
    }, 100);
    colorFunction.initColorCatalog();
    navFunction.initBurger()
@@ -51,23 +52,28 @@ window.onload = function () {
       document.querySelector('.preloader').classList.add('loaded');
       document.querySelector('.preloader').classList.remove('loaded-hiding');
    }, 600);
-   if (window.pageYOffset == 0 && window.innerWidth > 700) {
+
+   navFunction.scrollWindow();
+   setTimeout(() => {
       animFunction.animOnScroll();
+   }, 100);
+   if (window.pageYOffset == 0 && window.innerWidth > 700) {
+      wrapperBody.classList.add('anim')
    }
-   if (window.pageYOffset !== 0 || window.innerWidth <= 700) {
+   else if (window.pageYOffset !== 0 || window.innerWidth <= 700) {
       for (let y = 0; y < animItem.length; y++) {
          animItem[y].classList.add('no-item-active')
-         wrapperBody.classList.add('no-anim')
       }
+      wrapperBody.classList.remove('anim')
+
    }
-   navFunction.scrollWindow();
+
    initSmallScreen()
 };
 window.onscroll = function () {
    navFunction.scrollWindow();
-   if (!wrapperBody.classList.contains('no-anim')) {
-      animFunction.animOnScroll();
-   }
+   animFunction.animOnScroll();
+
 };
 window.onresize = function () {
    if (window.innerWidth <= 700 && wrapperBody.classList.contains('sw-active')) {

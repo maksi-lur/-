@@ -42,34 +42,38 @@ function initSmallScreen() {
 
 window.onload = function () {
    //предзагрузочный экран
-   setTimeout(() => {
-      mapFunction.initYmaps();
-      mapFunction.clickCity()
-      mapFunction.clickShop();
-   }, 100);
+   // setTimeout(() => {
+   //    mapFunction.initYmaps();
+   //    mapFunction.clickCity()
+   //    mapFunction.clickShop();
+   // }, 100);
    colorFunction.initColorCatalog();
    navFunction.initBurger()
    setTimeout(() => {
       document.querySelector('.preloader').classList.add('loaded-hiding');
       document.body.classList.remove('lock');
-   }, 300);
+   }, 100);
    setTimeout(() => {
       document.querySelector('.preloader').classList.add('loaded');
       document.querySelector('.preloader').classList.remove('loaded-hiding');
-   }, 600);
+   }, 400);
 
    navFunction.scrollWindow();
+   setTimeout(() => {
+      animFunction.animOnScroll();
+   }, 100);
    if (window.pageYOffset == 0 && window.innerWidth > 700) {
-      setTimeout(() => {
-         animFunction.animOnScroll();
-      }, 200);
+      wrapperBody.classList.add('anim')
    }
-   if (window.pageYOffset !== 0 || window.innerWidth <= 700) {
+   else if (window.pageYOffset !== 0 || window.innerWidth <= 700) {
       for (let y = 0; y < animItem.length; y++) {
          animItem[y].classList.add('no-item-active')
-         wrapperBody.classList.add('no-anim')
+
       }
+      wrapperBody.classList.remove('anim')
+
    }
+
    initPagination(proectsBulletList, proectsBulletList1, proectsBulletList2, proectWrapper)
    initPagination(teamBulletList, undefined, teamBulletList2, teamWrapper)
    initSmallScreen()
@@ -77,9 +81,8 @@ window.onload = function () {
 };
 window.onscroll = function () {
    navFunction.scrollWindow();
-   if (!wrapperBody.classList.contains('no-anim')) {
-      animFunction.animOnScroll();
-   }
+   animFunction.animOnScroll();
+
 };
 window.onresize = function () {
    if (window.innerWidth <= 700 && wrapperBody.classList.contains('sw-active')) {

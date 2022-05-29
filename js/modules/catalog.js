@@ -48,6 +48,9 @@ if (elementIndex == undefined) {
 }
 
 
+let lazyCatalogImage;
+
+
 //переменные для изменения цвета элементов контентной части
 let imageItem;
 let element;
@@ -334,6 +337,7 @@ export function clickHeadItem() {
       catalogObjItem.archiElementsList[i].addEventListener('click', function () {
          initElement(i)
          localStorage.element = i;
+         initLazyCatalogImage()
       })
    }
 
@@ -359,6 +363,7 @@ export function clickSubItem() {
       catalogObjItem.subElementList[d].addEventListener('click', function () {
          initSubElement(d)
          localStorage.subelement = d;
+         initLazyCatalogImage()
       })
    }
 }
@@ -489,6 +494,31 @@ export function initContentItem(param) {
 
 }
 
+export function initLazyCatalogImage() {
+   lazyCatalogImage = document.querySelectorAll('.content-list-active img[data-src],.content-list-active source[data-srcset]')
+   if (!catalogObjItem.activeContentList.classList.contains('image-lazy')) {
+      setTimeout(() => {
+         lazyCatalogImage.forEach(item => {
+            if (item.dataset.src) {
+               item.src = item.dataset.src;
+               item.removeAttribute('data-src');
+            }
+            if (item.dataset.srcset) {
+               item.srcset = item.dataset.srcset;
+            }
+         })
+
+         catalogObjItem.activeContentList.classList.add('image-lazy')
+
+      }, 100);
+
+   }
+
+}
+
+
+
+
 
 let addCatalog = document.querySelectorAll('.add-catalog');
 for (let j = 0; j < addCatalog.length; j++) {
@@ -497,211 +527,6 @@ for (let j = 0; j < addCatalog.length; j++) {
       localStorage.subelement = 0;
    })
 }
-
-//2Вариант работы каталога
-
-//обьект с переменными
-// export let catalogList = {
-//    archiElements: document.querySelectorAll('.element-item1'),
-//    archiElementsBlock: document.querySelectorAll('.element-item2'),
-//    subElementsList: document.querySelectorAll('.subelement-item'),
-//    contentItemList: document.querySelectorAll('.catalog-content-item'),
-//    contentList: document.querySelectorAll('.content-list'),
-//    contentItemInfolist: document.querySelectorAll('.main__headcatalog-content-item-info'),
-//    itemClosed: document.querySelectorAll('.main__headcatalog-content-item-closed'),
-//    infoBLockList: document.querySelectorAll('.main__headcatalog-content-item-infoblock'),
-//    firstElementInfoBlock: document.querySelector('.main__headcatalog-content-item-infoblock'),
-//    contentBlockList: document.querySelectorAll('.content-block'),
-//    activeArchiElements: document.getElementsByClassName('element-item1-active'),
-//    archiElementsList: {
-//       balustradi: document.querySelectorAll('.balustradi'),
-//       decorativnie: document.querySelectorAll('.dekorativnie'),
-//       zamkovie: document.querySelectorAll('.zamkovie'),
-//       malieArhitecturnie: document.querySelectorAll('.malie-arhitecturnie'),
-//       karnizi: document.querySelectorAll('.karnizi'),
-//       nalicniki: document.querySelectorAll('.nalicniki'),
-//       podokonniki: document.querySelectorAll('.podokonniki'),
-//       rusti: document.querySelectorAll('.rusti'),
-//       kolonni: document.querySelectorAll('.kolonni'),
-//       pilastri: document.querySelectorAll('.pilastri'),
-//    },
-//    contentElementsList: {
-//       balustradi: document.querySelectorAll('.content-list-balustradi'),
-//       decorativnie: document.querySelectorAll('.content-list-decorativnie'),
-//       zamkovie: document.querySelectorAll('.content-list-zamkovie'),
-//       malieArhitecturnie: document.querySelectorAll('.content-list-malie-arhitecturnie'),
-//       karnizi: document.querySelectorAll('.content-list-karnizi'),
-//       nalicniki: document.querySelectorAll('.content-list-nalicniki'),
-//       podokonniki: document.querySelectorAll('.content-list-podokonniki'),
-//       rusti: document.querySelectorAll('.content-list-rusti'),
-//       kolonni: document.querySelectorAll('.content-list-kolonni'),
-//       pilastri: document.querySelectorAll('.content-list-pilastri'),
-//    },
-// }
-
-// //список декор элементов
-// export let archiElementsHeadList = [
-//    catalogList.archiElementsList.balustradi,
-//    catalogList.archiElementsList.decorativnie,
-//    catalogList.archiElementsList.zamkovie,
-//    catalogList.archiElementsList.malieArhitecturnie,
-//    catalogList.archiElementsList.karnizi,
-//    catalogList.archiElementsList.nalicniki,
-//    catalogList.archiElementsList.podokonniki,
-//    catalogList.archiElementsList.rusti,
-//    catalogList.archiElementsList.kolonni,
-//    catalogList.archiElementsList.pilastri
-// ]
-// //список контентной части
-// export let contentElementsHeadList = [
-//    catalogList.contentElementsList.balustradi,
-//    catalogList.contentElementsList.decorativnie,
-//    catalogList.contentElementsList.zamkovie,
-//    catalogList.contentElementsList.malieArhitecturnie,
-//    catalogList.contentElementsList.karnizi,
-//    catalogList.contentElementsList.nalicniki,
-//    catalogList.contentElementsList.podokonniki,
-//    catalogList.contentElementsList.rusti,
-//    catalogList.contentElementsList.kolonni,
-//    catalogList.contentElementsList.pilastri
-// ]
-// let index1 = 0;
-
-
-
-//функция для инициализации элемента из списка декоративных элементов
-// export function initElement() {
-//    for (let i = 0; i < catalogList.archiElements.length; i++) {
-//       //добавление события клик на элемента главного списка
-//       catalogList.archiElements[i].addEventListener('click', function () {
-//          //переменная для проверки наличия класса у элемента
-//          let elementActive = catalogList.archiElements[i].classList.contains('element-active');
-//          //если клик на элемент происходит в первый раз
-//          if (!elementActive) {
-//             //переменная для поиска активных элементов главного списка
-//             let activeItem1Active = document.querySelectorAll('.element-item1-active');
-//             //переменная для поиска активных элементов подсписка
-//             let activeItem2Active = document.querySelectorAll('.element-item2-active');
-//             //переменная для поиска активного блока контента
-//             let activeContentBlockActive = document.querySelectorAll('.content-block-active');
-//             //цикл для нахождения и последующего удаления активных элементов списка и элементов списка блока контента
-//             //if (activeItem1Active[0] !== undefined) {
-//             for (let j = 0; j < activeItem1Active.length; j++) {
-//                activeItem1Active[j].classList.remove('element-active', 'element-item1-active');
-//                activeItem2Active[j].classList.remove('element-item2-active');
-//                activeContentBlockActive[j].classList.remove('content-block-active')
-//             }
-//             //}
-
-
-//             //переменная для поиска активных элементов подсписка главного списка
-//             let activeSubElementActive = document.querySelectorAll('.subelement-item-active')
-//             //переменная для поиска активного 'элемента списка контента
-//             let activeContentList = document.querySelectorAll('.content-list-active')
-//             //цикл для нахождения и последующего удаления активных элементов подсписка и активного элемента списка контента
-//             // if (activeSubElementActive[0] !== undefined) {
-//             for (let g = 0; g < activeSubElementActive.length; g++) {
-//                activeSubElementActive[g].classList.remove('subelement-item-active')
-//                activeContentList[g].classList.remove('content-list-active')
-//             }
-//             //}
-
-
-//             //переменная для поиска активного элемента контентной части
-//             let activeContentItem = document.querySelectorAll('.content-item-active');
-//             //переменная для поиска активного списка для изменения цвета
-//             let activeColorList = document.querySelectorAll('.color-list-active');
-//             //цикл для нахождения и последующего удаления елемента контентной части и активного списка для изменения цвета
-//             //так как изначально при загрузке страницы эти активные элементы отсутствуют необходимо сделать проверку
-//             if (activeContentItem[0] !== undefined) {
-//                for (let k = 0; k < activeContentItem.length; k++) {
-//                   activeContentItem[k].classList.remove('content-item-active');
-//                   activeColorList[k].classList.remove('color-list-active')
-//                }
-//             }
-//             //запуск функции для удаления выбранного цвета у элемента контентной части
-//             imageDelete();
-//             //добавления активного класса выбранному элементу главного списка
-//             catalogList.archiElements[i].classList.add('element-active', 'element-item1-active');
-//             //добавления активного класса выбранному блоку главного списка
-//             catalogList.archiElementsBlock[i].classList.add('element-item2-active');
-//             //добавления активного класса первому элементу подсписка выбранного элемента главного списка
-//             archiElementsHeadList[i][0].classList.add('subelement-item-active');
-//             //добавления активного класса первому элементу списка контента выбранного элемента подсписка
-//             contentElementsHeadList[i][0].classList.add('content-list-active');
-//             //добавления активного класса первому блоку контента
-//             catalogList.contentBlockList[i].classList.add('content-block-active');
-//
-//          }
-//          //если клик повторный на тот же элемент
-//          else {
-//             catalogList.archiElements[i].classList.add('element-item1-active');
-//             catalogList.archiElementsBlock[i].classList.add('element-item2-active');
-//          }
-//          //для выбора второго варианта работы функции инициализации элемента подсписка необходимо разкоментировать
-//
-//       })
-//    }
-// }
-// //функция для инициализации элемента из подсписка
-// export function initSubElement() {
-//
-//    for (let i = 0; i < catalogList.subElementsList.length; i++) {
-//       catalogList.subElementsList[i].addEventListener('click', function () {
-//          let activeSubElementActive = document.querySelectorAll('.subelement-item-active')
-//          let activeContentList = document.querySelectorAll('.content-list-active')
-//          for (let j = 0; j < activeSubElementActive.length; j++) {
-//             activeSubElementActive[j].classList.remove('subelement-item-active');
-//             activeContentList[j].classList.remove('content-list-active');
-//          }
-//          let activeContentItem = document.querySelectorAll('.content-item-active');
-//          let activeColorList = document.querySelectorAll('.color-list-active');
-//          if (activeContentItem[0] !== undefined) {
-//             for (let k = 0; k < activeContentItem.length; k++) {
-//                activeContentItem[k].classList.remove('content-item-active');
-//                activeColorList[k].classList.remove('color-list-active')
-//             }
-//          }
-//          imageDelete();
-//          catalogList.subElementsList[i].classList.add('subelement-item-active');
-//          catalogList.contentList[i].classList.add('content-list-active');
-//       })
-//    }
-// }
-// //функция для инициализации элемента контентной части
-// export function initContentItem() {
-//    for (let i = 0; i < catalogList.contentItemList.length; i++) {
-//       catalogList.contentItemInfolist[i].addEventListener('click', function () {
-//          let activeContentItem = document.querySelectorAll('.content-item-active');
-//          let activeColorList = document.querySelectorAll('.color-list-active');
-//          if (activeContentItem[0] !== undefined) {
-//             for (let k = 0; k < activeContentItem.length; k++) {
-//                activeContentItem[k].classList.remove('content-item-active');
-//                activeColorList[k].classList.remove('color-list-active')
-//             }
-//          }
-//          catalogList.contentItemList[i].classList.add('content-item-active');
-//          let colorList = document.querySelectorAll('.color-list');
-//          colorList[i].classList.add('color-list-active');
-//          initColor();
-//       })
-//       catalogList.itemClosed[i].addEventListener('click', function () {
-//          catalogList.contentItemList[i].classList.remove('content-item-active');
-//          let colorList = document.querySelectorAll('.color-list');
-//          colorList[i].classList.remove('color-list-active')
-//          imageDelete();
-//       });
-//    }
-// }
-
-
-
-
-
-
-
-
-
 
 
 

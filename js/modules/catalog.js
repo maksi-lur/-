@@ -348,6 +348,7 @@ export function clickHeadItem() {
 
             initElement(u)
             localStorage.element = u;
+            initLazyCatalogImage()
          }
       })
    }
@@ -495,16 +496,21 @@ export function initContentItem(param) {
 }
 
 export function initLazyCatalogImage() {
-   lazyCatalogImage = document.querySelectorAll('.content-list-active img[data-src],.content-list-active source[data-srcset]')
+   lazyCatalogImage = document.querySelectorAll('.content-list-active img[data-src],.content-list-active source[data-srcset]');
+   // let lazyImg = document.querySelectorAll('.content-list-active img');
+   // let lazySource = document.querySelectorAll('.content-list-active source');
    if (!catalogObjItem.activeContentList.classList.contains('image-lazy')) {
       setTimeout(() => {
          lazyCatalogImage.forEach(item => {
             if (item.dataset.src) {
                item.src = item.dataset.src;
                item.removeAttribute('data-src');
+
             }
             if (item.dataset.srcset) {
                item.srcset = item.dataset.srcset;
+               item.removeAttribute('data-srcset');
+
             }
          })
 

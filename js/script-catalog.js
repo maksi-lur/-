@@ -40,18 +40,18 @@ window.onload = function () {
       catalogFunction.clickHeadItem()
       catalogFunction.clickSubItem()
       catalogFunction.clickContentItem()
-
+      catalogFunction.initLazyCatalogImage()
    }, 100);
    colorFunction.initColorCatalog();
    navFunction.initBurger()
    setTimeout(() => {
       document.querySelector('.preloader').classList.add('loaded-hiding');
       document.body.classList.remove('lock');
-   }, 300);
+   }, 100);
    setTimeout(() => {
       document.querySelector('.preloader').classList.add('loaded');
       document.querySelector('.preloader').classList.remove('loaded-hiding');
-   }, 600);
+   }, 400);
 
    navFunction.scrollWindow();
    setTimeout(() => {
